@@ -1,7 +1,7 @@
 package com.digistratum.microhost.Example.Api;
 
-import com.digistratum.microhost.Config.Config;
-import com.digistratum.microhost.Config.ConfigImpl;
+import com.digistratum.Config.Config;
+import com.digistratum.Config.ConfigImpl;
 import com.digistratum.microhost.Database.ModelFactory;
 import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnectionPool;
 import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnectionPoolImpl;
