@@ -28,7 +28,7 @@ public class RestApiModule {
 		//System.out.println("providing real config to someone!");
 		// Read in configuration properties
 		String userDir = System.getProperty("user.dir");
-		String propsFile = userDir + "/RestApi.properties";
+		String propsFile = userDir + "/JavaMicroHostExample.properties";
 		return new ConfigImpl(propsFile);
 	}
 
