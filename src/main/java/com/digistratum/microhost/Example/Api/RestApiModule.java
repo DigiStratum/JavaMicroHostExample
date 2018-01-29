@@ -28,7 +28,6 @@ public class RestApiModule {
 	@Provides
 	@Singleton
 	Config provideConfig() {
-		//System.out.println("providing real config to someone!");
 		// Read in configuration properties
 		String userDir = System.getProperty("user.dir");
 		String propsFile = userDir + "/JavaMicroHostExample.properties";
