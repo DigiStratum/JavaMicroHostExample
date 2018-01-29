@@ -2,15 +2,18 @@ package com.digistratum.microhost.Example.Api;
 
 import com.digistratum.Config.Config;
 import com.digistratum.Config.ConfigImpl;
-import com.digistratum.microhost.Database.ModelFactory;
-import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnectionPool;
-import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnectionPoolImpl;
-import com.digistratum.microhost.Database.Mysql.Model.MySqlModelFactory;
-import com.digistratum.microhost.Example.Service.ServiceExample;
-import com.digistratum.microhost.Process.MHRunnable;
-import com.digistratum.microhost.RestServer.*;
 
+import com.digistratum.Database.ModelFactory;
+import com.digistratum.Database.Mysql.Connection.MySqlConnectionPool;
+import com.digistratum.Database.Mysql.Connection.MySqlConnectionPoolImpl;
+import com.digistratum.Database.Mysql.Model.MySqlModelFactory;
+
+import com.digistratum.Process.MHRunnable;
+
+import com.digistratum.microhost.Example.Service.ServiceExample;
+import com.digistratum.microhost.RestServer.*;
 import com.digistratum.microhost.RestServer.Http.HttpServerFactory;
+
 import dagger.Module;
 import dagger.Provides;
 

@@ -1,8 +1,8 @@
 package com.digistratum.microhost.Example.Model;
 
-import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnection;
-import com.digistratum.microhost.Database.Mysql.Model.MysqlModelImpl;
-import com.digistratum.microhost.Exception.MHException;
+import com.digistratum.Database.Exception.MHDatabaseException;
+import com.digistratum.Database.Mysql.Connection.MySqlConnection;
+import com.digistratum.Database.Mysql.Model.MysqlModelImpl;
 
 import java.util.List;
 
@@ -18,9 +18,9 @@ public class ModelMysqlDatabaseImpl extends MysqlModelImpl {
 	 *
 	 * @return List of ModelMysqlDatabaseImpl's
 	 *
-	 * @throws MHException for any errors
+	 * @throws MHDatabaseException for any errors
 	 */
-	public List<ModelMysqlDatabaseImpl> getDatabases(MySqlConnection conn) throws MHException {
+	public List<ModelMysqlDatabaseImpl> getDatabases(MySqlConnection conn) throws MHDatabaseException {
 		return conn.query(
 			ModelMysqlDatabaseImpl.class,
 			"show databases;"

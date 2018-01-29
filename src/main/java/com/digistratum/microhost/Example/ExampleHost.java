@@ -2,10 +2,9 @@ package com.digistratum.microhost.Example;
 
 import com.digistratum.microhost.Example.Api.RestApiModule;
 import com.digistratum.microhost.MicroHostApp;
-import com.digistratum.microhost.Process.MHRunnable;
 import com.digistratum.microhost.RestServer.DaggerRestApiComponent;
 import com.digistratum.microhost.RestServer.RestApiComponent;
-
+import com.digistratum.Process.MHRunnable;
 
 public class ExampleHost extends MicroHostApp {
 

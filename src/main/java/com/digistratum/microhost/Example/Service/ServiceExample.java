@@ -1,8 +1,8 @@
 package com.digistratum.microhost.Example.Service;
 
-import com.digistratum.microhost.Database.ModelFactory;
-import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnection;
-import com.digistratum.microhost.Database.Mysql.Connection.MySqlConnectionPool;
+import com.digistratum.Database.ModelFactory;
+import com.digistratum.Database.Mysql.Connection.MySqlConnection;
+import com.digistratum.Database.Mysql.Connection.MySqlConnectionPool;
 import com.digistratum.microhost.Example.Model.ModelMysqlDatabaseImpl;
 import com.digistratum.microhost.Exception.MHException;
 
