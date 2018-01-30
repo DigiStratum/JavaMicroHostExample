@@ -1,5 +1,7 @@
-package com.digistratum.microhost.Example.RestApi;
+package com.digistratum.microhost.Example.RestServer.Controller;
 
+import com.digistratum.microhost.Example.RestServer.Endpoint.EndpointDatabases;
+import com.digistratum.microhost.Example.RestServer.Endpoint.EndpointHello;
 import com.digistratum.microhost.Example.Service.ServiceExample;
 import com.digistratum.microhost.RestServer.Controller.ControllerBaseImpl;
 
@@ -8,11 +10,11 @@ import javax.inject.Inject;
 /**
  * ControllerBaseImplExample example controller
  */
-class ControllerExampleImpl extends ControllerBaseImpl {
+public class ControllerExampleImpl extends ControllerBaseImpl {
 	ServiceExample service;
 
 	@Inject
-	ControllerExampleImpl(ServiceExample service) {
+	public ControllerExampleImpl(ServiceExample service) {
 		super();
 		this.service = service;
 	}

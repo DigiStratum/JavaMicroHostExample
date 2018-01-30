@@ -1,4 +1,4 @@
-package com.digistratum.microhost.Example.RestApi;
+package com.digistratum.microhost.Example.App;
 
 import com.digistratum.Config.Config;
 import com.digistratum.microhost.RestServer.RestApiImpl;
@@ -7,8 +7,8 @@ import dagger.Component;
 import javax.inject.Singleton;
 
 @Singleton
-@Component(modules = {RestApiModule.class})
-public interface RestApiComponent {
+@Component(modules = {ExampleModule.class})
+public interface ExampleComponent {
 	Config getConfig();
 	RestApiImpl getRestApi();
 }

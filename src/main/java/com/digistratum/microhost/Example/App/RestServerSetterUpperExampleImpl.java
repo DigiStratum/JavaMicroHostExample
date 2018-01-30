@@ -1,6 +1,7 @@
-package com.digistratum.microhost.Example.RestApi;
+package com.digistratum.microhost.Example.App;
 
 import com.digistratum.Config.Config;
+import com.digistratum.microhost.Example.RestServer.Controller.ControllerExampleImpl;
 import com.digistratum.microhost.Example.Service.ServiceExample;
 import com.digistratum.microhost.Exception.MHException;
 import com.digistratum.microhost.RestServer.RestServer;

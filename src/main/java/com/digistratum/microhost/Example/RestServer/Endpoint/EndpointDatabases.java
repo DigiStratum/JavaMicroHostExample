@@ -1,4 +1,4 @@
-package com.digistratum.microhost.Example.RestApi;
+package com.digistratum.microhost.Example.RestServer.Endpoint;
 
 import com.digistratum.microhost.Example.Service.ServiceExample;
 import com.digistratum.microhost.Exception.MHException;
@@ -11,14 +11,14 @@ import javax.inject.Inject;
 /**
  * Get a list of mysql databases
  */
-class EndpointDatabases extends EndpointImpl {
+public class EndpointDatabases extends EndpointImpl {
 	protected ServiceExample service;
 
 	/**
 	 * Constructor
 	 */
 	@Inject
-	EndpointDatabases(ServiceExample service) {
+	public EndpointDatabases(ServiceExample service) {
 		this.service = service;
 	}
 

@@ -1,4 +1,4 @@
-package com.digistratum.microhost.Example.RestApi;
+package com.digistratum.microhost.Example.RestServer.Endpoint;
 
 import com.digistratum.microhost.Exception.MHException;
 import com.digistratum.microhost.RestServer.Endpoint.EndpointImpl;

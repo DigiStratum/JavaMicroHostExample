@@ -1,6 +1,7 @@
 package com.digistratum.microhost.Example;
 
-import com.digistratum.microhost.Example.App.ExampleHost;
+import com.digistratum.microhost.App.MicroHostApp;
+import com.digistratum.microhost.Example.App.ExampleApp;
 import com.digistratum.microhost.RestServer.RestApiImpl;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -17,19 +18,21 @@ import static org.mockito.Mockito.verify;
  *
  * @FIXME Figure out how to get MockitoJUnitTestRunner plus @Mock and @InjectMocks to do the mocking for us!
  */
-public class ExampleHostTest {
-	private ExampleHost sut;
+public class ExampleAppTest {
+	private ExampleApp sut;
 
 	private RestApiImpl mockRestApiImpl;
+	private MicroHostApp mockMicroHostApp;
 
 	@BeforeEach
 	public void setup() throws Exception {
-		mockRestApiImpl = mock(RestApiImpl.class);
-		sut = new ExampleHost(mockRestApiImpl);
+		//mockRestApiImpl = mock(RestApiImpl.class);
+		mockMicroHostApp = mock(MicroHostApp.class);
+		sut = new ExampleApp(mockMicroHostApp);
 	}
 
 	@Test
 	public void testThatExampleHostStartsApi() {
-		verify(mockRestApiImpl, times(1)).run();
+		verify(mockMicroHostApp, times(1)).run();
 	}
 }
