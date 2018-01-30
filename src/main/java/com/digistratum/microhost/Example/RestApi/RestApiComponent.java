@@ -1,8 +1,7 @@
-package com.digistratum.microhost.RestServer;
+package com.digistratum.microhost.Example.RestApi;
 
 import com.digistratum.Config.Config;
-import com.digistratum.microhost.Example.Api.RestApiModule;
-import com.digistratum.Process.MHRunnable;
+import com.digistratum.microhost.RestServer.RestApiImpl;
 import dagger.Component;
 
 import javax.inject.Singleton;
@@ -11,5 +10,5 @@ import javax.inject.Singleton;
 @Component(modules = {RestApiModule.class})
 public interface RestApiComponent {
 	Config getConfig();
-	MHRunnable getRestApi();
+	RestApiImpl getRestApi();
 }

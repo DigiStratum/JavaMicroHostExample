@@ -1,4 +1,4 @@
-package com.digistratum.microhost.Example.Api;
+package com.digistratum.microhost.Example.RestApi;
 
 import com.digistratum.Config.Config;
 import com.digistratum.microhost.Example.Service.ServiceExample;

@@ -1,6 +1,6 @@
 package com.digistratum.microhost.Example;
 
-import com.digistratum.microhost.Example.ExampleHost;
+import com.digistratum.microhost.Example.App.ExampleHost;
 import com.digistratum.microhost.RestServer.RestApiImpl;
 
 import org.junit.jupiter.api.BeforeEach;

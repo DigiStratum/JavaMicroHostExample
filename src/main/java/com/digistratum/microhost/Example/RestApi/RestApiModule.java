@@ -1,4 +1,4 @@
-package com.digistratum.microhost.Example.Api;
+package com.digistratum.microhost.Example.RestApi;
 
 import com.digistratum.Config.Config;
 import com.digistratum.Config.ConfigImpl;
@@ -8,9 +8,10 @@ import com.digistratum.Database.Mysql.Connection.MySqlConnectionPool;
 import com.digistratum.Database.Mysql.Connection.MySqlConnectionPoolImpl;
 import com.digistratum.Database.Mysql.Model.MySqlModelFactory;
 
-import com.digistratum.Process.MHRunnable;
+import com.digistratum.Process.RunnableProcess;
 
 import com.digistratum.microhost.Example.Service.ServiceExample;
+import com.digistratum.microhost.App.MicroHostApp;
 import com.digistratum.microhost.RestServer.*;
 import com.digistratum.microhost.RestServer.Http.HttpServerFactory;
 
@@ -21,7 +22,7 @@ import javax.inject.Singleton;
 
 @Module
 /**
- * Dagger module for DI of all our Singleton
+ * Dagger module for DI of all our Singletons
  */
 public class RestApiModule {
 
@@ -62,7 +63,7 @@ public class RestApiModule {
 
 	@Provides
 	@Singleton
-	MHRunnable provideRestApi(RestServer server) {
+	RunnableProcess provideRestApi(RestServer server) {
 		return new RestApiImpl(server);
 	}
 
